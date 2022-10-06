@@ -29,7 +29,7 @@ public class Main {
                 Puzzle8 estadoInicial2 = new Puzzle8();
 		estadoInicial2.setEstado(cfgIni2);
 		estadoInicial2.setCusto(0);
-		estadoInicial2.setAvaliacao( estadoInicial2.heuristica(cfgFim1) );
+		estadoInicial2.setAvaliacao( estadoInicial2.heuristica(cfgFim2) );
 			
 		Puzzle8 estadoFinal2 = new Puzzle8();
 		estadoFinal2.setEstado(cfgFim2);
@@ -37,7 +37,7 @@ public class Main {
 		estadoFinal2.setAvaliacao(0);
 					
      
-               /*
+               
                 BuscaEmProfundidadeLimitada BuscaEPL1 = new BuscaEmProfundidadeLimitada();
                 BuscaEPL1.setInicio(estadoInicial1);
 		BuscaEPL1.setObjetivo(estadoFinal1);
@@ -56,11 +56,11 @@ public class Main {
 		for(Estado e : BuscaEPL2.getCaminhoSolucao()) {
 			System.out.println(e);
 		} 
-                System.out.println("Fim da segunda Execução");*/
+                System.out.println("Fim da segunda Execução");
                 
                 
                 
-                
+                /*
                 BuscaEmProfundidadeLimitada BInterativa = new BuscaEmProfundidadeLimitada();
                 BInterativa.setInicio(estadoInicial1);
                 BInterativa.setObjetivo(estadoFinal1);
@@ -82,8 +82,8 @@ public class Main {
                  BuscaEmProfundidadeLimitada BInterativa2 = new BuscaEmProfundidadeLimitada();
                 BInterativa2.setInicio(estadoInicial2);
                 BInterativa2.setObjetivo(estadoFinal2);
-                
                 BInterativa.setLimite(0);
+                
                 List<Estado<?>> caminhoSolucao2 = null;
                 while(caminhoSolucao2 == null ){
                     try {
@@ -93,13 +93,13 @@ public class Main {
                     }
                       BInterativa2.setLimite(BInterativa2.getLimite()+ 1);
                 } 
-                System.out.println(BInterativa.getCaminhoSolucao());
-                System.out.println("Fim da segunda execução!");
+                System.out.println(BInterativa2.getCaminhoSolucao());
+                System.out.println("Fim da segunda execução!");*/
           
                 
               
             //BuscaEmLargura
-              /*  
+              /*
                 BuscaEmLargura buscaLargura = new BuscaEmLargura();
                 buscaLargura.setInicio(estadoInicial1);
 		buscaLargura.setObjetivo(estadoFinal1);
